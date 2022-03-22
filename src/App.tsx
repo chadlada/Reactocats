@@ -1,4 +1,5 @@
 import React from 'react'
+import { Reactocat } from './components/reactocats'
 
 export function App() {
   return (
@@ -44,7 +45,19 @@ export function App() {
 
       <main>
         <section>
-          <article>
+          <Reactocat
+            imageLink="https://octodex.github.com//hulatocat/"
+            image="https://octodex.github.com//images/hula_loop_octodex03.gif"
+            imageAlt="hulatocat"
+            number="137"
+            nameLink="https://octodex.github.com//hulatocat/"
+            name="Hula To Cat"
+            creatorLink="https://github.com/chubbmo"
+            creatorImage="https://github.com/chubbmo.png"
+            creatorAlt="chubbmo"
+          />
+
+          {/* <article>
             <a href="https://octodex.github.com//hulatocat/">
               <img
                 src="https://octodex.github.com//images/hula_loop_octodex03.gif"
@@ -160,7 +173,7 @@ export function App() {
             </ul>
           </article>
 
-          {/* <!-- --------------------------------------------------------- --> */}
+          
           <article>
             <a href="https://octodex.github.com//dinotocat/">
               <img
@@ -399,7 +412,7 @@ export function App() {
                 </a>
               </li>
             </ul>
-          </article>
+          </article> */}
         </section>
       </main>
       <footer>
