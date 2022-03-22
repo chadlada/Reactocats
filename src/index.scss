@@ -1,0 +1,126 @@
+:root {
+  font: 16px / 1 sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+  padding: 10px 5px 0px 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 3.5px;
+  border-bottom: 0.75px solid grey;
+  position: sticky;
+  top: 0;
+  opacity: 0.8;
+  padding-left: 15px;
+}
+
+header ul {
+  display: flex;
+  font-size: 15px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-right: 33px;
+  /* justify-content: space-between; */
+}
+.twitgit {
+  margin-top: 1rem;
+  font-size: 14px;
+  text-align: right;
+  padding-right: 8px;
+}
+
+.octo {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  /* padding-left: 10px; */
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+
+main article {
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+}
+
+main article ul {
+  padding: 1rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  position: relative;
+  top: -17px;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+  padding: 5px 7px 5px 7px;
+}
+
+section article a img {
+  border-radius: 0.75rem;
+  border: 0.75px solid lightgray;
+}
+
+section article {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  border-top: 0.75px solid grey;
+  font-size: 13px;
+}
+
+/* when the width is less than 494 do this */
+@media all and (max-width: 494px) {
+  header {
+    /* border: 10px solid black; */
+  }
+
+  header > ul {
+    padding-right: 4rem;
+  }
+
+  /* don't show 'backtogithub' */
+  header .github {
+    display: none;
+  }
+}
+
+@media all and (min-width: 400px) {
+  body {
+    /* background-color: blueviolet; */
+  }
+}
