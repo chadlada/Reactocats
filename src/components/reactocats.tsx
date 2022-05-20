@@ -1,38 +1,38 @@
 import React from 'react'
 
 type ReactocatsProps = {
-  imageLink: string
-  image: string
-  imageAlt: string
-  number: string
-  nameLink: string
+  number: number
   name: string
-  creatorLink: string
-  creatorImage: string
-  creatorAlt: string
+  image: string
+  link: string
+
+  authorlink: string
+  authorimage: string
 }
 
+// This is the COMPONENT
 export function Reactocat(props: ReactocatsProps) {
   return (
     <article>
-      <a href={props.imageLink}>
-        <img src={props.image} width="315" height="315" alt={props.imageAlt} />
+      <a href={props.link}>
+        <img
+          src={props.image}
+          width="315"
+          height="315"
+          // alt={props.imageAlt}
+        />
       </a>
       <ul>
         <li>
           #{props.number}:
-          <a href={props.nameLink}>
+          <a href={props.link}>
             <strong>{props.name}</strong>
           </a>
         </li>
+
         <li>
-          <a href={props.creatorLink}>
-            <img
-              src={props.creatorImage}
-              width="24px"
-              height="24px"
-              alt={props.creatorAlt}
-            />
+          <a href={props.link}>
+            <img src={props.image} width="24px" height="24px" alt="chubbmo" />
           </a>
         </li>
       </ul>
