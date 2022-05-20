@@ -59,7 +59,9 @@ export function App() {
       </header>
 
       <main>
-        <div>{reactocatsFromData}</div>
+        <section>
+          <div>{reactocatsFromData}</div>
+        </section>
       </main>
       <footer>
         <div>
