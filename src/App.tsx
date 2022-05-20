@@ -49,7 +49,11 @@ export function App() {
         <ul>
           <li className="twitgit">
             <a href="https://twitter.com/githubdesign">
-              <img src="/images/twitterblack.png" width="30" height="30" />
+              <img
+                src="https://www.iconsdb.com/icons/preview/black/twitter-xxl.png"
+                width="30"
+                height="30"
+              />
             </a>
             <a className="github" href="https://github.com/">
               Back to GitHub.com
@@ -60,7 +64,7 @@ export function App() {
 
       <main>
         <section>
-          <div>{reactocatsFromData}</div>
+          <div className="octodiv">{reactocatsFromData}</div>
         </section>
       </main>
       <footer>
